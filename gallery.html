@@ -81,38 +81,65 @@
         .video-overlay {
             background: linear-gradient(to top, rgba(0,17,58,0.6) 0%, rgba(0,17,58,0) 100%);
         }
+
+        /* Navbar Transparency Styles (Hero View) */
+        #main-nav.nav-transparent .nav-logo { color: #ffffff; text-shadow: 0 1px 4px rgba(0, 11, 58, 0.4); }
+        #main-nav.nav-transparent .nav-link { 
+            color: rgba(255, 255, 255, 0.9); 
+            text-shadow: 0 1px 4px rgba(0, 11, 58, 0.4); 
+        }
+        #main-nav.nav-transparent .nav-link:hover { color: #ffffff; }
+        #main-nav.nav-transparent .nav-active { 
+            color: #ffffff; 
+            border-color: rgba(255, 255, 255, 0.82); 
+            text-shadow: 0 1px 6px rgba(0, 11, 58, 0.5);
+        }
+        #main-nav.nav-transparent .nav-btn { 
+            background-color: rgba(255, 255, 255, 0.05); 
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+            color: #ffffff; 
+            text-shadow: 0 1px 2px rgba(0, 11, 58, 0.2);
+        }
+        #main-nav.nav-transparent .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #ffffff;
+        }
     </style>
 </head>
 <body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- Top Navigation Bar -->
-<nav class="bg-[#faf9f7]/80 dark:bg-[#00113a]/80 backdrop-blur-md text-[#00113a] dark:text-[#faf9f7] font-['Newsreader'] serif tracking-tight docked full-width top-0 sticky no-border tonal-shift shadow-sm shadow-[#00113a]/5 dark:shadow-none z-50">
-<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
-<div class="text-2xl font-bold font-['Newsreader'] text-[#00113a] dark:text-[#faf9f7]">Royal Priest Church</div>
+<!-- Top Navigation -->
+<nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-500">
+<div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
+<a class="nav-logo text-2xl font-semibold font-['Newsreader'] text-[#00113a] dark:text-[#faf9f7] transition-colors" href="index.html">Royal Priest Church</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="index.html">Home</a>
-<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="about.html">About Us</a>
-<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="testimonials.html">Testimonials</a>
-<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="events.html">Events</a>
-<a class="text-[#735a32] dark:text-[#735a32] font-semibold border-b-2 border-[#735a32] pb-1" href="gallery.html">Gallery</a>
-<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="q&a.html">Q&amp;A</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="about.html">About Us</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="testimonials.html">Testimonials</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="events.html">Events</a>
+<a class="nav-link nav-active text-[#735a32] dark:text-[#735a32] font-semibold font-['Manrope'] border-b-2 border-[#735a32] pb-1 transition-all" href="gallery.html">Gallery</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="q&a.html">Q&amp;A</a>
 </div>
-<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label text-sm font-semibold hover:opacity-90 active:scale-95 transition-all">
+<a href="contact.html"><button class="nav-btn bg-primary text-on-primary px-6 py-2 rounded-md font-label uppercase tracking-widest text-xs scale-95 hover:opacity-90 transition-all active:scale-95">
                 Contact Us
             </button></a>
 </div>
 </nav>
 <main>
 <!-- Intro Section -->
-<section class="relative min-h-[409px] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
+<section class="relative min-h-[60vh] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover opacity-10 grayscale scale-105" data-alt="Interior view of a modern minimalist church with sunlight streaming through large windows casting soft shadows on wooden pews" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmai_n0VodO5d55taqk-0gZ-gKkHhJTQn5nhJviN-NL0hL5TVlx8-YKyDuXxPe-ivAL8cEQ5kAQOVLfGG8lGNNQG8oSiO5votPoyWzE6THKu3tHhQWgF_jwwNsaW4EqzuqRIlSOXYevw7t5K__DUmHDcp0opv3CnQTXww13MgOPu06cOH-vc37y-7YIuvuv1CYsnZtmrsSAsK5DowtqPt72pOXcfazQFQSHq3rx_WKK3o_2py1tzPrwcHjB-f7uMBHR13eIh1jkAk"/>
-<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+<img class="w-full h-full object-cover" data-alt="Interior view of a modern minimalist church with sunlight streaming through large windows casting soft shadows on wooden pews" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHkm9b4_gPm4KmL401fAy6x6nQ2pzEWm5sLh_9yGCVZWTE3XbaUdIZFQspVKuhwiv_Y6I0d2wYEede-85EZu91Tr1E-LDzRpNbuqiSFmHyFJRQOK9XWVAoo1_j3bHZ6wP9ihRv3WM8nkvaHiwj99orC2pjzCetnmKf0ziyvGh9pQdpDgXxGxfWIS8jeH3q9OZ4NjViq1sIUgxjEz6DuFZw2ChwdpvKR3LmuOmbTqKI9N8KdQqHqTfOMoo5DrDC-oP8DqdBZFQLd_A"/>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/30 to-transparent opacity-80"></div>
+<div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/50 to-transparent pointer-events-none z-10"></div>
 </div>
-<div class="relative z-10 max-w-3xl">
-<h1 class="font-headline text-5xl md:text-7xl text-primary tracking-tight mb-6">Gallery</h1>
-<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
-                    Explore moments and memories from our church. A visual journey through our worship, community, and service.
-                </p>
+<div class="relative z-10 max-w-4xl mx-auto">
+<h1 class="font-headline text-display-lg text-4xl md:text-5xl lg:text-6xl text-on-primary tracking-tight mb-6">Gallery</h1>
+<p class="font-body text-xl md:text-2xl text-on-primary/90 max-w-2xl mx-auto leading-relaxed">
+                        A visual journey through our sacred spaces and community moments. Each frame tells a story of faith, light, and architectural grace.
+                    </p>
 </div>
 </section>
 <!-- Toggle & Filter Section -->
@@ -242,10 +269,10 @@
 </div>
 </div>
 <div class="mt-20 flex justify-center">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-label font-bold hover:bg-primary-container transition-all flex items-center gap-2">
-                        View All Videos
-                        <span class="material-symbols-outlined text-lg">trending_flat</span>
-</button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-md text-xs font-label font-bold tracking-widest uppercase hover:bg-primary-container transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20 flex items-center gap-2">
+                    View More Moments
+                    <span class="material-symbols-outlined text-sm">arrow_outward</span>
+                </button>
 </div>
 </div>
 </section>
@@ -284,4 +311,24 @@
 </div>
 </div>
 </footer>
+<script>
+  const nav = document.getElementById('main-nav');
+  const heroSection = document.querySelector('section.relative');
+  const heroHeight = heroSection ? heroSection.offsetHeight : 500;
+
+  function updateNav() {
+    if (window.scrollY > heroHeight * 0.1) {
+      nav.classList.add('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+      nav.classList.remove('bg-transparent', 'nav-transparent');
+    } else {
+      nav.classList.remove('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+      nav.classList.add('bg-transparent', 'nav-transparent');
+    }
+  }
+
+  // Set initial state
+  nav.classList.add('bg-transparent', 'nav-transparent');
+  updateNav();
+  window.addEventListener('scroll', updateNav, { passive: true });
+</script>
 </body></html>

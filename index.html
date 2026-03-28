@@ -77,22 +77,47 @@
         }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        /* Navbar Transparency Styles (Hero View) */
+        #main-nav.nav-transparent .nav-logo { color: #ffffff; text-shadow: 0 1px 4px rgba(0, 11, 58, 0.4); }
+        #main-nav.nav-transparent .nav-link { 
+            color: rgba(255, 255, 255, 0.9); 
+            text-shadow: 0 1px 4px rgba(0, 11, 58, 0.4); 
+        }
+        #main-nav.nav-transparent .nav-link:hover { color: #ffffff; }
+        #main-nav.nav-transparent .nav-active { 
+            color: #ffffff; 
+            border-color: rgba(255, 255, 255, 0.82); 
+            text-shadow: 0 1px 6px rgba(0, 11, 58, 0.5);
+        }
+        #main-nav.nav-transparent .nav-btn { 
+            background-color: rgba(255, 255, 255, 0.05); 
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255, 255, 255, 0.5); 
+            color: #ffffff; 
+            text-shadow: 0 1px 2px rgba(0, 11, 58, 0.2);
+        }
+        #main-nav.nav-transparent .nav-btn:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-color: #ffffff;
+        }
     </style>
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
 <!-- Top Navigation -->
-<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-[#021526]/80 backdrop-blur-md shadow-sm dark:shadow-none">
+<nav id="main-nav" class="fixed top-0 w-full z-50 transition-all duration-500">
 <div class="flex justify-between items-center px-12 py-6 max-w-screen-2xl mx-auto">
-<a class="font-['Newsreader'] text-2xl font-bold text-[#00113a] dark:text-[#faf9f7] italic tracking-tight" href="index.html">Royal Priest Church</a>
+<a class="nav-logo text-2xl font-semibold font-['Newsreader'] text-[#00113a] dark:text-[#faf9f7] transition-colors" href="index.html">Royal Priest Church</a>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#735a32] border-b-2 border-[#735a32] pb-1 font-semibold" href="index.html">Home</a>
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors" href="about.html">About Us</a>
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors" href="testimonials.html">Testimonials</a>
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors" href="events.html">Events</a>
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors" href="gallery.html">Gallery</a>
-<a class="font-['Newsreader'] tracking-tight text-lg text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors" href="q&a.html">Q&amp;A</a>
+<a class="nav-link nav-active text-[#735a32] dark:text-[#735a32] font-semibold font-['Manrope'] border-b-2 border-[#735a32] pb-1 transition-all" href="index.html">Home</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="about.html">About Us</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="testimonials.html">Testimonials</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="events.html">Events</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="gallery.html">Gallery</a>
+<a class="nav-link text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="q&a.html">Q&amp;A</a>
 </div>
-<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label text-sm font-semibold tracking-wide hover:opacity-90 transition-transform active:scale-95">
+<a href="contact.html"><button class="nav-btn bg-primary text-on-primary px-6 py-2 rounded-md font-label uppercase tracking-widest text-xs scale-95 hover:opacity-90 transition-all active:scale-90">
                 Contact Us
             </button></a>
 </div>
@@ -100,17 +125,18 @@
 <!-- Hero Welcome Carousel -->
 <section class="relative h-screen w-full overflow-hidden">
 <div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="wide shot of a sun-drenched modern church interior with warm light hitting wooden pews and high ceilings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHkm9b4_gPm4KmL401fAy6x6nQ2pzEWm5sLh_9yGCVZWTE3XbaUdIZFQspVKuhwiv_Y6I0d2wYEede-85EZu91Tr1E-LDzRpNbuqiSFmHyFJRQOK9XWVAoo1_j3bHZ6wP9ihRv3WM8nkvaHiwj99orC2pjzCetnmKf0ziyvGh9pQdpDgXxGxfWIS8jeH3q9OZ4NjViq1sIUgxjEz6DuFZw2ChwdpvKR3LmuOmbTqKI9N8KdQqHqTfOMoo5DrDC-oP8DqdBZFQLd_A"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary/60 to-transparent"></div>
+<img alt="Church sanctuary interior" class="w-full h-full object-cover" data-alt="Interior of a modern minimal church sanctuary with warm natural light streaming through high windows and soft architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHkm9b4_gPm4KmL401fAy6x6nQ2pzEWm5sLh_9yGCVZWTE3XbaUdIZFQspVKuhwiv_Y6I0d2wYEede-85EZu91Tr1E-LDzRpNbuqiSFmHyFJRQOK9XWVAoo1_j3bHZ6wP9ihRv3WM8nkvaHiwj99orC2pjzCetnmKf0ziyvGh9pQdpDgXxGxfWIS8jeH3q9OZ4NjViq1sIUgxjEz6DuFZw2ChwdpvKR3LmuOmbTqKI9N8KdQqHqTfOMoo5DrDC-oP8DqdBZFQLd_A"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/70 via-primary/30 to-transparent"></div>
+<div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/50 to-transparent pointer-events-none"></div>
 </div>
 <div class="relative z-10 flex flex-col justify-center h-full px-12 md:px-24 max-w-4xl">
 <span class="text-secondary font-label tracking-[0.2em] mb-4 uppercase text-sm font-bold">Est. 1994</span>
-<h1 class="font-headline text-5xl md:text-7xl text-on-primary leading-[1.1] mb-8 italic">Welcome to <br/> Royal Priest Church</h1>
+<h1 class="font-headline text-4xl md:text-5xl lg:text-6xl text-on-primary leading-[1.1] mb-8 italic">Welcome to <br/> Royal Priest Church</h1>
 <p class="font-body text-xl text-on-primary/80 max-w-xl mb-10 leading-relaxed">
                 Discover a place where ancient faith meets contemporary life. Step into our sanctuary and find your spiritual home today.
             </p>
 <div class="flex items-center gap-6">
-<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-label font-bold tracking-wide hover:bg-primary-container transition-all">
+<button class="bg-primary text-on-primary px-4 py-2 rounded-md text-xs font-label font-bold tracking-widest uppercase hover:bg-primary-container transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
                     Join Us
                 </button>
 <button class="flex items-center gap-2 text-on-primary font-label group">
@@ -246,9 +272,9 @@
 </div>
 </div>
 <div class="mt-12 text-center">
-<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-label font-bold tracking-widest uppercase text-xs hover:bg-tertiary transition-all">
-                Explore Full Gallery
-            </button>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-md text-xs font-label font-bold tracking-widest uppercase hover:bg-primary-container transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/20">
+                            Join the Community
+                        </button>
 </div>
 </section>
 <!-- Testimonials Section -->
@@ -257,9 +283,9 @@
 <span class="text-secondary font-label tracking-widest uppercase text-sm font-bold block mb-4">Voice of the Family</span>
 <h2 class="font-headline text-4xl md:text-5xl text-primary leading-tight mb-8">Stories of Transformation</h2>
 <p class="text-on-surface-variant text-lg leading-relaxed mb-10">Real people, real faith, real community. Hear how Royal Priest Church has impacted lives across generations.</p>
-<button class="border border-primary text-primary px-8 py-3 rounded-md font-label font-bold text-sm tracking-wide hover:bg-primary hover:text-on-primary transition-all">
-                View All Testimonials
-            </button>
+<button class="border border-primary text-primary px-4 py-2 rounded-md text-xs font-label font-bold tracking-widest uppercase hover:bg-primary hover:text-on-primary transition-all transform hover:scale-105 active:scale-95 shadow-lg shadow-primary/10">
+                    Contact Office
+                </button>
 </div>
 <div class="md:col-span-7 bg-surface-container-low p-12 rounded-lg relative">
 <span class="material-symbols-outlined text-secondary text-6xl opacity-30 absolute top-8 left-8">format_quote</span>
@@ -339,4 +365,23 @@
 </div>
 </div>
 </footer>
+<script>
+  const nav = document.getElementById('main-nav');
+  const heroHeight = document.querySelector('section.relative.h-screen').offsetHeight;
+
+  function updateNav() {
+    if (window.scrollY > heroHeight * 0.1) {
+      nav.classList.add('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+      nav.classList.remove('bg-transparent', 'nav-transparent');
+    } else {
+      nav.classList.remove('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+      nav.classList.add('bg-transparent', 'nav-transparent');
+    }
+  }
+
+  // Set initial state
+  nav.classList.add('bg-transparent');
+  updateNav();
+  window.addEventListener('scroll', updateNav, { passive: true });
+</script>
 </body></html>
