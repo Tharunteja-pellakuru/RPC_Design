@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Events - Royal Priest Church</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&amp;family=Manrope:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Icons -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "secondary": "#735a32",
+              "error": "#ba1a1a",
+              "on-background": "#1a1c1b",
+              "surface-tint": "#435b9f",
+              "tertiary-fixed-dim": "#b5c8df",
+              "surface-dim": "#dadad8",
+              "on-primary-container": "#758dd5",
+              "inverse-surface": "#2f3130",
+              "primary-fixed-dim": "#b3c5ff",
+              "on-tertiary-container": "#7f91a6",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed-dim": "#e3c191",
+              "on-primary-fixed-variant": "#2a4386",
+              "surface-container-low": "#f4f3f1",
+              "error-container": "#ffdad6",
+              "on-surface-variant": "#444650",
+              "surface-container-highest": "#e3e2e0",
+              "primary-container": "#002366",
+              "outline-variant": "#c5c6d2",
+              "on-secondary-fixed-variant": "#5a431d",
+              "primary-fixed": "#dbe1ff",
+              "background": "#faf9f7",
+              "surface-container": "#efeeec",
+              "on-tertiary-fixed": "#091d2e",
+              "on-surface": "#1a1c1b",
+              "tertiary": "#021526",
+              "primary": "#00113a",
+              "surface-container-high": "#e9e8e6",
+              "inverse-primary": "#b3c5ff",
+              "tertiary-container": "#182a3b",
+              "secondary-container": "#fedaa8",
+              "on-secondary-fixed": "#281900",
+              "surface": "#faf9f7",
+              "on-tertiary": "#ffffff",
+              "on-error": "#ffffff",
+              "on-primary-fixed": "#00174a",
+              "on-error-container": "#93000a",
+              "outline": "#757682",
+              "secondary-fixed": "#ffdeae",
+              "surface-variant": "#e3e2e0",
+              "on-tertiary-fixed-variant": "#36485b",
+              "on-primary": "#ffffff",
+              "tertiary-fixed": "#d1e4fb",
+              "inverse-on-surface": "#f1f1ef",
+              "surface-bright": "#faf9f7",
+              "on-secondary-container": "#785e36"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .snap-x-mandatory {
+            scroll-snap-type: x mandatory;
+        }
+        .snap-center {
+            scroll-snap-align: center;
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 backdrop-blur-md shadow-sm shadow-[#00113a]/5">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-serif text-[#00113a] font-['Newsreader'] tracking-tight">Royal Priest Church</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#021526]/70 hover:text-[#00113a] transition-colors font-['Newsreader'] tracking-tight" href="index.html">Home</a>
+<a class="text-[#021526]/70 hover:text-[#00113a] transition-colors font-['Newsreader'] tracking-tight" href="about.html">About Us</a>
+<a class="text-[#021526]/70 hover:text-[#00113a] transition-colors font-['Newsreader'] tracking-tight" href="testimonials.html">Testimonials</a>
+<a class="text-[#735a32] border-b-2 border-[#735a32] pb-1 font-medium font-['Newsreader'] tracking-tight" href="events.html">Events</a>
+<a class="text-[#021526]/70 hover:text-[#00113a] transition-colors font-['Newsreader'] tracking-tight" href="gallery.html">Gallery</a>
+<a class="text-[#021526]/70 hover:text-[#00113a] transition-colors font-['Newsreader'] tracking-tight" href="q&a.html">Q&amp;A</a>
+</div>
+<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-medium text-sm hover:opacity-90 active:scale-95 transition-all">
+                Contact Us
+            </button></a>
+</div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Church sanctuary interior" class="w-full h-full object-cover" data-alt="Interior of a modern minimal church sanctuary with warm natural light streaming through high windows and soft architectural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf2-JzF3gPM4louSxus_aTpjGAR3oLu3XvSdITYIb3JFawtNv7bz5fEoHEUbUhXxTPeHH_K1QW2Jl2QP2x_Ysp4e-0rOo-skAd8MW1J7Xvvxl0ncS4ZmlPlwTFMcgd3Nph80CyoF8cpEYJCFuTmaK20bCaK-aIoE0hO7a7sCCPWlXZ52vGsbrvESEwNlJJP2Bcr7y4RvPCxQ_MkLTys6gxLcO7u5fziDuI1bOieCxWgZ4H7B7u2TPi5dMGmiD8ScPBKqtuHTfjazE"/>
+<div class="absolute inset-0 bg-primary/40 backdrop-overlay transition-opacity"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-surface"></div>
+</div>
+<div class="relative z-10 text-center px-6 max-w-4xl">
+<h1 class="font-headline text-5xl md:text-7xl text-on-primary mb-6 tracking-tight">Events</h1>
+<p class="font-body text-lg md:text-xl text-on-primary/90 max-w-2xl mx-auto leading-relaxed">
+                    Stay connected with our upcoming and past gatherings as we grow together in faith and community.
+                </p>
+</div>
+</section>
+<!-- Upcoming Events Carousel -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex items-end justify-between mb-12">
+<div>
+<span class="text-secondary font-medium tracking-widest uppercase text-xs">Journey Together</span>
+<h2 class="font-headline text-4xl text-primary mt-2">Upcoming Events</h2>
+</div>
+<div class="hidden md:flex space-x-4">
+<button class="p-2 rounded-full border border-outline-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 rounded-full border border-outline-variant hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex overflow-x-auto snap-x-mandatory no-scrollbar space-x-8 pb-8">
+<!-- Event Card 1 -->
+<div class="flex-none w-[350px] md:w-[400px] snap-center">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="h-60 overflow-hidden relative">
+<img alt="Worship Night" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A candlelit evening worship service with silhouettes of people raising hands in a serene and sacred atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxQigoifZ2SJ0Uqg7DghL6ZQs2XXzSbFPB51o35-1Kmumfzh9lGoAeV-eFnbZeI2MGrSj5GUXt6-2lgKJTSIRdB9HrX7Zk20IxeA2K5J97oojPV8XzWJsS2cbk3rgYhDufGphr5fqhzc6QQ5r6SB_wUOaRJuQuyd6sAQAoVsAw3KlvEB_c3XAjpKWlkMBgr_rGLiwTOBiyUu6ho-6DwcjOmsFd0_bulJ1aVZegk823Vn5fV1-KF-sfBbZRS4w83gwTh7MEnWGy79A"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded text-sm font-bold">15 NOV</div>
+</div>
+<div class="p-8">
+<div class="flex items-center text-secondary text-sm mb-3">
+<span class="material-symbols-outlined text-sm mr-2">schedule</span>
+<span>7:00 PM - 9:00 PM</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-3">Divine Worship Night</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Join us for an immersive evening of prayer and contemporary worship led by our sanctuary choir.</p>
+<button class="w-full py-3 px-6 bg-surface-container-high text-primary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center justify-center">
+                                    View Details
+                                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="flex-none w-[350px] md:w-[400px] snap-center">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="h-60 overflow-hidden relative">
+<img alt="Community Breakfast" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="A diverse group of people laughing and sharing a meal around a rustic wooden table with fresh flowers and morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyv0D5_-0t65iYqojoJGsqAbIwyS7DINvKUtTmr7CNF3IACcDM4AaRgomMe4_h_tKOI3XGy7cTvukAv05Aj6-RTNKvOmQHW_vzCzF8lb92Gg8K3L3NokjSv53NhybMxgbym8odMkPdkaG76zcI5JWhNsRddSWnLCcWpT3KUSYlEnm5xM6MMlEfna1QJhUd4Kf7unAXf4Hq3XT2YWPstARDzh1kQUOGKnTzfRFn9fPKxRVcZlsrA7yY9PzisbkYF6__MWFQofs1yHs"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded text-sm font-bold">22 NOV</div>
+</div>
+<div class="p-8">
+<div class="flex items-center text-secondary text-sm mb-3">
+<span class="material-symbols-outlined text-sm mr-2">schedule</span>
+<span>9:00 AM - 11:00 AM</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-3">Community Fellowship</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">A morning dedicated to building connections over breakfast. All families and neighbors are welcome.</p>
+<button class="w-full py-3 px-6 bg-surface-container-high text-primary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center justify-center">
+                                    View Details
+                                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="flex-none w-[350px] md:w-[400px] snap-center">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="h-60 overflow-hidden relative">
+<img alt="Youth Seminar" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Group of young adults engaged in a workshop setting with colorful notebooks and focused expressions in a modern lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBouYvu-4pqwM5PicBXPSZa43RyAjxoyz2gk5qj2m1NJiwKv84AmR3Z5t3N-LtaoWdFVd9u5xzu0R6VLksbqIoGZq02djQHBelvk41-afCLoBL_ohuAPPX8WLq4zbMxoL_iUlAZKOe_28hoyS7f7FYL7mgpCYWnS57GKj66GYPaLcyvIVhAgTCTdac1Z7QIefsQiwjOEiqg_kK88eesH7OsXnC2WcENG8ZrVEN0VADwwm2AoeggEfYIlJhizVyl8zrADSlZTU8JPg"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded text-sm font-bold">01 DEC</div>
+</div>
+<div class="p-8">
+<div class="flex items-center text-secondary text-sm mb-3">
+<span class="material-symbols-outlined text-sm mr-2">schedule</span>
+<span>2:00 PM - 5:00 PM</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-3">Youth Empowerment</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">A seminar focused on leadership and faith for the next generation of our community leaders.</p>
+<button class="w-full py-3 px-6 bg-surface-container-high text-primary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center justify-center">
+                                    View Details
+                                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Event Card 4 -->
+<div class="flex-none w-[350px] md:w-[400px] snap-center">
+<div class="group bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div class="h-60 overflow-hidden relative">
+<img alt="Choir Rehearsal" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Choir singers in ivory robes practicing in a grand hall with wooden pews and golden ambient lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDGM5t02rZlZraIjwAEm93zo3z21-ISdXjHVmy4gM187BlT4yaASwbLFknYSCrSOh0FnC3Plhiq-v-HEd6drZ5jZNjuGFq4VQmFuvbSaXPQQKE3iStmonGScv-quqttwx-60Z-mQOOoopfkNkDnLspRXo7jttP6rEg7lW_0k1OH_lf2d7SzdDamggImIYPqAI4f_n3V0rwP_yPq9MOZo11Mwff0abode3twouJlVpOOpwaYerIcr55oQI23SxSb5OL1unxVZadryE"/>
+<div class="absolute top-4 right-4 bg-secondary text-white px-3 py-1 rounded text-sm font-bold">05 DEC</div>
+</div>
+<div class="p-8">
+<div class="flex items-center text-secondary text-sm mb-3">
+<span class="material-symbols-outlined text-sm mr-2">schedule</span>
+<span>6:00 PM - 8:00 PM</span>
+</div>
+<h3 class="font-headline text-2xl text-primary mb-3">Annual Carol Practice</h3>
+<p class="text-on-surface-variant text-sm mb-6 line-clamp-2">Preparations begin for our festive Christmas service. Open to all who love to sing.</p>
+<button class="w-full py-3 px-6 bg-surface-container-high text-primary font-semibold rounded-lg hover:bg-secondary hover:text-white transition-colors flex items-center justify-center">
+                                    View Details
+                                    <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Scripture Block Interstitial -->
+<section class="py-20 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<div class="p-12 bg-surface-variant border-l-2 border-secondary relative overflow-hidden">
+<span class="material-symbols-outlined absolute top-4 right-4 text-6xl text-primary/5 select-none" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<h3 class="font-headline text-3xl md:text-4xl text-primary text-center italic mb-4">"For where two or three gather in my name, there am I with them."</h3>
+<p class="text-secondary font-medium text-center">— Matthew 18:20</p>
+</div>
+</div>
+</section>
+<!-- Past Events Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-12">
+<span class="text-secondary font-medium tracking-widest uppercase text-xs">Past Moments</span>
+<h2 class="font-headline text-4xl text-primary mt-2">Cherished Memories</h2>
+</div>
+<div class="flex overflow-x-auto snap-x-mandatory no-scrollbar space-x-6 pb-8">
+<!-- Past Event 1 -->
+<div class="flex-none w-[280px] md:w-[320px] snap-center group">
+<div class="relative rounded-lg overflow-hidden aspect-[4/5] mb-4">
+<img alt="Family Picnic" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Children playing on a sunny grass field during a church picnic, candid joy and vibrant summer colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPWseJB5UCt_-B0yaceLjnd7xVrPcZ8dvy9gUlSNNz1PaIUFsXprOJm5DsJL5KT-tcChBJKv4DNU-4pqUDC7Spifpz3CBQMyqwIu67f_jifCAklnz-My7FRkqmBRNS8EDREWq8iTx1kw_7u5DWB0E-UtnzofB-d40FLOLsuFLAWUIau1jAxSMxuixfia27UPi4BviHU0M_CKFG3MGvR-sJfkUE5MMbbm3DArZKRy6JFWRBuiv2N3eq0PmrkQCuKNygVQfiZ0pUlok"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<div>
+<p class="text-secondary-fixed text-xs font-bold uppercase mb-1">Oct 20, 2024</p>
+<h4 class="text-white font-headline text-xl">Autumn Family Picnic</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Past Event 2 -->
+<div class="flex-none w-[280px] md:w-[320px] snap-center group">
+<div class="relative rounded-lg overflow-hidden aspect-[4/5] mb-4">
+<img alt="Concert" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Stage lighting illuminating a guitarist and singers in a darkened hall during a spirit-filled concert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtmhHMMO9XB7550mtAv7KRlWb4K6PMwc5t6mH7M6DCeJWgj6Bb3XANRM2GiPLx5i6DphJNKStHRtttAoXl73SrgWBM3HlWHF6wIMA0Y09n1roIbGrsM4QF9Fj8gkcWAFtVUFluZef_1bJ_B6KzLLxJ5y9IRPOGcHZUUU5W6hSwWagpzMEuC3_8nPfcrymsZawRlS7jhRK_TR39I7c956tn7r6sqFMh-IO2sXY-vEUrKWuNIXhDKZhpIXBOQ6RgUZP0OqUNHEEYS5M"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<div>
+<p class="text-secondary-fixed text-xs font-bold uppercase mb-1">Oct 05, 2024</p>
+<h4 class="text-white font-headline text-xl">Harvest Music Fest</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Past Event 3 -->
+<div class="flex-none w-[280px] md:w-[320px] snap-center group">
+<div class="relative rounded-lg overflow-hidden aspect-[4/5] mb-4">
+<img alt="Conference" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Keynote speaker on a minimal stage with soft blue lighting addressing an attentive audience in a modern auditorium" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0acIPjoo_D3DAw1bwHqM1zK-ejSDKSU4Y1m769qnrvOXVt2GtC2yVHfiM5zkO_TQBa6qvKQXalivF8Dyt_t8OxerLqxwcv9Zu1_rEMAhb4-5gdnZaSEpDSqbhkK11EC8ggnYKNFPyz6jBsjKT7agQfgdDXgKQ6vFhqscRmQ2ac5XQGspM6EHAYFi7s7vq7px3l7ywhMPM8FkZwcKLOcFwXevKvve1jAnC8u2aWuHVfjrLhi-rV7gDccSk_kSmgPku04vveen5Szg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<div>
+<p class="text-secondary-fixed text-xs font-bold uppercase mb-1">Sep 15, 2024</p>
+<h4 class="text-white font-headline text-xl">Leadership Summit</h4>
+</div>
+</div>
+</div>
+</div>
+<!-- Past Event 4 -->
+<div class="flex-none w-[280px] md:w-[320px] snap-center group">
+<div class="relative rounded-lg overflow-hidden aspect-[4/5] mb-4">
+<img alt="Charity" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Hands passing boxes of food and supplies during a community outreach program in an urban setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoEw1EJpkC_rxJU2Rw_I9TPyB3UP7ApmPyeHw1DvUVAEBF0WCd1DN0U8E7ba748nCOyh1mNeFljPEsPX6KY9fMKUjN_iSEILlhovwgMUhvaTebalCWC2HsZ1c7IQku8GhSjQksCvJWiO_5It-K8MhwB4HYKAW13PYuHWiFNht3w8kgsHy4juXqz_CPD3_nSlq73HY7MMpPrI8zJy7LJqeyF59k2nvjytuoJJq7luRRbwQv4k1A-UBpWnEbJ-AV7_WozBKsZD2o64Q"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex items-end p-6">
+<div>
+<p class="text-secondary-fixed text-xs font-bold uppercase mb-1">Aug 30, 2024</p>
+<h4 class="text-white font-headline text-xl">Community Outreach</h4>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#021526] py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-16 max-w-7xl mx-auto">
+<div class="text-lg font-serif text-[#735a32] mb-6 md:mb-0 font-['Newsreader']">Royal Priest Church</div>
+<div class="flex space-x-12 mb-8 md:mb-0">
+<div class="flex flex-col space-y-2">
+<span class="text-[#faf9f7] font-bold text-xs uppercase tracking-widest mb-2">Navigation</span>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors text-sm font-['Manrope']" href="index.html">Home</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors text-sm font-['Manrope']" href="about.html">About Us</a>
+<a class="text-[#735a32] text-sm font-['Manrope']" href="events.html">Events</a>
+</div>
+<div class="flex flex-col space-y-2">
+<span class="text-[#faf9f7] font-bold text-xs uppercase tracking-widest mb-2">Connect</span>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors text-sm font-['Manrope']" href="#">Facebook</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors text-sm font-['Manrope']" href="#">Instagram</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors text-sm font-['Manrope']" href="#">YouTube</a>
+</div>
+</div>
+<div class="text-center md:text-right">
+<p class="text-[#faf9f7]/60 text-sm tracking-wide font-['Manrope'] mb-2">© 2024 Royal Priest Church. All rights reserved.</p>
+<div class="flex justify-center md:justify-end space-x-4">
+<a class="text-[#faf9f7]/40 hover:text-[#735a32] transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined text-xl">public</span>
+</a>
+<a class="text-[#faf9f7]/40 hover:text-[#735a32] transition-transform active:scale-110" href="#">
+<span class="material-symbols-outlined text-xl">share</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery | Royal Priest Church</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed-dim": "#b5c8df",
+              "surface-dim": "#dadad8",
+              "on-secondary-fixed-variant": "#5a431d",
+              "on-primary-fixed-variant": "#2a4386",
+              "tertiary": "#021526",
+              "primary-container": "#002366",
+              "outline-variant": "#c5c6d2",
+              "on-primary-fixed": "#00174a",
+              "surface-bright": "#faf9f7",
+              "secondary-fixed-dim": "#e3c191",
+              "surface-container-highest": "#e3e2e0",
+              "on-primary": "#ffffff",
+              "primary-fixed": "#dbe1ff",
+              "surface-container-low": "#f4f3f1",
+              "surface-tint": "#435b9f",
+              "surface-container": "#efeeec",
+              "on-tertiary-fixed-variant": "#36485b",
+              "secondary-container": "#fedaa8",
+              "on-surface": "#1a1c1b",
+              "on-secondary-fixed": "#281900",
+              "background": "#faf9f7",
+              "secondary-fixed": "#ffdeae",
+              "outline": "#757682",
+              "on-error": "#ffffff",
+              "on-background": "#1a1c1b",
+              "surface": "#faf9f7",
+              "on-tertiary": "#ffffff",
+              "on-error-container": "#93000a",
+              "on-secondary": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary-fixed": "#091d2e",
+              "inverse-surface": "#2f3130",
+              "inverse-on-surface": "#f1f1ef",
+              "primary-fixed-dim": "#b3c5ff",
+              "secondary": "#735a32",
+              "on-primary-container": "#758dd5",
+              "on-tertiary-container": "#7f91a6",
+              "error-container": "#ffdad6",
+              "tertiary-container": "#182a3b",
+              "primary": "#00113a",
+              "tertiary-fixed": "#d1e4fb",
+              "surface-variant": "#e3e2e0",
+              "inverse-primary": "#b3c5ff",
+              "error": "#ba1a1a",
+              "on-surface-variant": "#444650",
+              "surface-container-high": "#e9e8e6",
+              "on-secondary-container": "#785e36"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .video-overlay {
+            background: linear-gradient(to top, rgba(0,17,58,0.6) 0%, rgba(0,17,58,0) 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="bg-[#faf9f7]/80 dark:bg-[#00113a]/80 backdrop-blur-md text-[#00113a] dark:text-[#faf9f7] font-['Newsreader'] serif tracking-tight docked full-width top-0 sticky no-border tonal-shift shadow-sm shadow-[#00113a]/5 dark:shadow-none z-50">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-bold font-['Newsreader'] text-[#00113a] dark:text-[#faf9f7]">Royal Priest Church</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="index.html">Home</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="about.html">About Us</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="testimonials.html">Testimonials</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="events.html">Events</a>
+<a class="text-[#735a32] dark:text-[#735a32] font-semibold border-b-2 border-[#735a32] pb-1" href="gallery.html">Gallery</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300" href="q&a.html">Q&amp;A</a>
+</div>
+<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-md font-label text-sm font-semibold hover:opacity-90 active:scale-95 transition-all">
+                Contact Us
+            </button></a>
+</div>
+</nav>
+<main>
+<!-- Intro Section -->
+<section class="relative min-h-[409px] flex flex-col items-center justify-center text-center px-6 py-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-10 grayscale scale-105" data-alt="Interior view of a modern minimalist church with sunlight streaming through large windows casting soft shadows on wooden pews" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmai_n0VodO5d55taqk-0gZ-gKkHhJTQn5nhJviN-NL0hL5TVlx8-YKyDuXxPe-ivAL8cEQ5kAQOVLfGG8lGNNQG8oSiO5votPoyWzE6THKu3tHhQWgF_jwwNsaW4EqzuqRIlSOXYevw7t5K__DUmHDcp0opv3CnQTXww13MgOPu06cOH-vc37y-7YIuvuv1CYsnZtmrsSAsK5DowtqPt72pOXcfazQFQSHq3rx_WKK3o_2py1tzPrwcHjB-f7uMBHR13eIh1jkAk"/>
+<div class="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl text-primary tracking-tight mb-6">Gallery</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed max-w-2xl mx-auto">
+                    Explore moments and memories from our church. A visual journey through our worship, community, and service.
+                </p>
+</div>
+</section>
+<!-- Toggle & Filter Section -->
+<section class="pb-16 px-6">
+<div class="max-w-screen-xl mx-auto flex flex-col items-center">
+<div class="inline-flex p-1.5 bg-surface-container rounded-full shadow-inner mb-12">
+<button class="px-10 py-2.5 rounded-full bg-surface-container-lowest text-primary font-semibold shadow-sm transition-all">
+                        Photos
+                    </button>
+<button class="px-10 py-2.5 rounded-full text-on-surface-variant font-medium hover:text-primary transition-all">
+                        Videos
+                    </button>
+</div>
+</div>
+<!-- Photos Grid -->
+<div class="max-w-screen-2xl mx-auto px-4 md:px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+<!-- Gallery Item 1 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Candid shot of a diverse congregation laughing and sharing a meal together in a bright church hall during a community event" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClVbJGyGjo6BZbeUABZf92ra2NOpB-XQFGt5nje3N7PMmDhm8HWW6PV0ql8vOCqJgttInUKGPSYQr0PxE3eMQi-saWiZIsVvfkWDXLcuiOvZZTQjlgyV9N0ivJbkuGOKUeDTdkLGuDczUFuAdBnokFNsUUsRkmGKfhXtYrxJBg_A3_I4EcZshxQk7jCmQJozMoJO2OO0Od7PfbHdmu_wNArn1Sk8c2zzbu9JgreC9lC0AgysxQoz_CSp7xhikRtO2_296rCKIZAYA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 2 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of hands clasped in prayer during a morning service with soft golden sunlight illuminating the skin and simple clothing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF58hBAL5JKLYQe1qC5zeVqMzPo9-pXofpRra5xxqdCpU6ZD7XC8THRE_JWXnzBfG6i-pSgNZwhUr8FXXzyTdZoR6UqJ_Ne2QaI0d1LNFjxZxKPXBAKqA_iE8Y2tHfvW9kxpERrk9c3iIH5LhdZAxu3Zi_uUogH0AG7A5ZaMJ8ihIWsg3BTILmdrFofRH46sS1rKqp5TUb1bgArlfSLTsz0xZc0f2GDBMmITWudqvbBXrrAMFvsbO3W_8MLhAnb86p-Y3bQL7l27o"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 3 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Young children singing in a church choir wearing simple white robes against a blurred background of a modern sanctuary" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2ivKKr_Uresqf2hdvOtaVHRDwYXukl_PtI_JwkbqTsc60aEqD8C38jIJbQC2mrkUFo2JfOCVo-msFFR8NExiGPGH5GMqYsOrfKLImkSzlSqTG6hK5kURT2J-nNMBZBgpywBO40dCePYTvg5O6Djo2QLWv_uHK9EVQC_7FxaDlu7kQRrn55BzJhGTdIn1lzzGK4eHMqkQ1CF6Fa00b-k11qswiAMAUVou3oyB70mbPuQTyJeKTryRvyx2kQSF18-LEf3djFcxz8SI"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 4 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Wide angle shot of an outdoor evening worship service with people gathered around a small fire under a starry sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9gV_WKD3J20zMQUQftKFZPsOma5vNMzph4AzJ7IaCumd20uB6aZ7o8wfkHJcln4UUtjwJBnFf7JgN-yapPpM0EP46NmuW0KoHUtdkx5n4MXOsVRpjU7OiDHA-cBAaC3b2jHt_2CavhTY5IpHmZB1biECqGxZ8A7kAYnQoMCxEdvi4s4cITkLzyAClbwkI8XbxWEpruYV81yOScPyr7tgJEct8mEd-axLs1C8rcj1WAi6bhjjuQOzE03wBFBRrHKh7OCvcmCscaKA"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 5 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Aerial view of people sitting in a circle on a plush rug for a small group bible study in a warm living room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEYPiJbF91dtWAZt6KXsnIdjHETQ3C_jhhQlbQemkuNslo23bCIKWaUY2-r1KytP-vpxGZtRoLpgXW4OF04FSf7WtzIjHeFPXInIcBzFzgyzD2qOxWG-1N9nakHj7zV9iqkJOiqn_nEP1Txrei__Us4TtdF-_J7rpxt140D3NGmZ69p-iVZgne-5ui7Iek22CrCwvTupKyquekn026NxiGlssD1ZF7NzRSLlicloUiSC0gHKYQKGz9lInUaAtW4CbjSpoIZlZxkKo"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 6 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Volunteers smiling while packing boxes of food and supplies for a local charity drive in a spacious church basement" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWXsvcheVesXfaNRvEAcX-_pJKSspfCNahe5wnXPVgx7fQZzCxl_uZbemnRU4doIyqUGV3pMOKyInWlyspNfXIm3etVplL0IUewB80uagIbTYHSB4BMOA2lFwSGdlgLm46W7JfCTO9zJAtgvGtwdV8B_usadUW4U0oTs4sKfwb9SLO8I1O3JG3benO-mFfw5KbI9JVH5atS7lebymM9cTeXhVAHIuKtXAmuj0LJWJHl1Uhm1OLsV81s69wB8JdhT0H3mHM4gALzZ8"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 7 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Musician playing an acoustic guitar with intensity during a worship session with soft blue and purple lighting in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB13s-piBmA4W1Pab08EDcaWJ62wdIJZy06mFovprsR8Dlr81-Ks_og1M6f9mdveVROBjhx0iyUh17MibVuYrQQSQU05uYwe5PnjmIkMJEhaJgKawh1W8fRd7ABfoka3roM3-jY0sgK3XUHh8WNBuNiqKbjsyoOBvvCPdQErzsEz400F8Vx_Ox9XkElliU2j-XFTR0R6grZNhPIQiusUEfyAyP1YXfI8Z2TbHtnHOuUp_5rznYkPXEUVDFOnvqS4An68W8ytNQt7hM"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+<!-- Gallery Item 8 -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low transition-all duration-500 hover:shadow-2xl hover:shadow-primary/10">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="High-key photo of an open bible on a simple wooden lectern with soft natural light highlighting the delicate pages" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdDByzyzbLZX33JQx6bhE05lmNWXWtxkk46vhpUjsqBrIiPP2KGWl7SNj7KDDX18ibW9tdyuYlyIK2cVPL60rmalMKNcG-9YHe86yy1r_I3Oc9QCTqVVS7i9j4Mc3KAxGG6O22oito3qWUT3hhNDZjMRP6CRy3KbJdRTg9yI8erKWnaFRjFvPvkWllpa-QZvkDdd5KHabv-0EDPO6KhqgSvqSTQ5cqIvZMrDTOJkmt2FVa3SwxToXKeUehReb5UHHGATHnVF39PoU"/>
+<div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center backdrop-blur-[2px]">
+<span class="material-symbols-outlined text-white text-4xl font-light">add</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Videos Content Section -->
+<section class="py-24 px-6 bg-surface-container-low/30">
+<div class="max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center mb-16 text-center">
+<h2 class="font-headline text-4xl text-primary mb-4">Live Services &amp; Sermons</h2>
+<div class="w-20 h-0.5 bg-secondary mb-4"></div>
+<p class="font-body text-on-surface-variant">Revisit our weekly messages and special musical performances.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Video Card 1 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-tertiary mb-4">
+<img class="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic view of a preacher on stage under dramatic spotlighting with a large screen displaying scripture in the background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAA7DrM3QsZrMB34YDb1cxJGOLN6-OUl3Y0q_C_bvm1rt-3LU2ywkDlN5mwVwtc4L1ZDWSENiB1TxFi2LY1SpgmDGireKMtnq3OnmwXm1OJzMdxlMgsuo93izEywNqYUZMJuZrR_OirvuiGOZ1zPz7XG7-5XJVjYPEk2Io_tf25h7OLRgvRtlRq6VoLXm-3jAoAOyMAbKyeWdmzst2bWCsjF4X7yjTP87AQEXs8dMI2g7oODsSBaitSi7BDFtMHg7WFc_LIgPVXQJg"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-white text-3xl" data-weight="fill">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-label tracking-widest uppercase">45:12</div>
+</div>
+<h3 class="font-headline text-xl text-primary group-hover:text-secondary transition-colors">The Path of Purpose: Sunday Morning Message</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Recorded Oct 15, 2024</p>
+</div>
+<!-- Video Card 2 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-tertiary mb-4">
+<img class="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105" data-alt="A crowded auditorium with people raising their hands during a high-energy worship concert with vibrant lighting effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALGT4bn1x5Q7BfZYyZuA2iqFCGcpsnDlBa70V1UC9EQvslRBPb6SsWZGIqygLDamM4yv4EwRP3Fo2fdyAjX_ee2Z8q-tuphVvmYfeVbosb2jxBkNn5hGRjk571myrPYxrXeql-w_vmQ2VpTKM9I60W4rV_sNRQQ3V9OBdVnVD_nI1x3ilJX7USPe7Vx-Lbt1VqekXCOCHDzVlnngbnITcHtH16RpU7F5XlMLu6JQHV1pgVilVXDXougV_sOINHEpMlKVdc128oA1E"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-white text-3xl" data-weight="fill">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-label tracking-widest uppercase">12:04</div>
+</div>
+<h3 class="font-headline text-xl text-primary group-hover:text-secondary transition-colors">Worship Highlights: Songs of Praise</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Recorded Oct 08, 2024</p>
+</div>
+<!-- Video Card 3 -->
+<div class="group cursor-pointer">
+<div class="relative aspect-video rounded-xl overflow-hidden bg-tertiary mb-4">
+<img class="w-full h-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-105" data-alt="Candid documentary style footage of volunteers building a house for a community project under a bright blue sky" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiP_xKUMSx-zGSLkj9uWygOKM7h3-uQVFh1vYHkbtYf9AhhKJjdgOYtYu10d6FNo79UU1bSLhf0NloyJN8qH1oD7BfRvMmEaa2wU5zmy8L_MlruWCjKMPKLUydkIDay-THPXo5dhCVMHlQpp12U6V2ceNDImkX_wxAddZX35hbjAhNKxAW7wh9GLJ6FoFzVIelE4KN7x2AjzwtrI_cbxDmAqAxyWjSfTDFs-lwTXSYQ1TGUPozZSruZfbtp4SVAf-m5RINa9uu3Bg"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center group-hover:bg-secondary transition-all duration-300">
+<span class="material-symbols-outlined text-white text-3xl" data-weight="fill">play_arrow</span>
+</div>
+</div>
+<div class="absolute bottom-3 right-3 bg-primary/80 backdrop-blur-sm text-white text-[10px] px-2 py-1 rounded font-label tracking-widest uppercase">05:30</div>
+</div>
+<h3 class="font-headline text-xl text-primary group-hover:text-secondary transition-colors">Mission Trip: Building for Hope</h3>
+<p class="font-body text-sm text-on-surface-variant mt-1">Recorded Sep 22, 2024</p>
+</div>
+</div>
+<div class="mt-20 flex justify-center">
+<button class="bg-primary text-on-primary px-10 py-4 rounded-md font-label font-bold hover:bg-primary-container transition-all flex items-center gap-2">
+                        View All Videos
+                        <span class="material-symbols-outlined text-lg">trending_flat</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Signature Component: The Scripture Block -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-4xl mx-auto bg-surface-container-low p-12 md:p-20 relative">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 w-1 h-2/3 bg-secondary"></div>
+<div class="text-center">
+<span class="material-symbols-outlined text-secondary/30 text-6xl mb-8">format_quote</span>
+<h2 class="font-headline text-3xl md:text-4xl italic text-primary leading-relaxed">
+                        "O worship the Lord in the beauty of holiness: fear before him, all the earth."
+                    </h2>
+<p class="mt-8 font-label text-secondary font-bold tracking-[0.2em] uppercase">Psalm 96:9</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#021526] dark:bg-[#00081d] text-[#faf9f7] font-['Manrope'] text-sm tracking-wide full-width tonal-layering flat no shadows">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 max-w-screen-2xl mx-auto">
+<div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+<div class="text-lg font-['Newsreader'] text-[#735a32] mb-4">Royal Priest Church</div>
+<p class="text-[#faf9f7]/60 max-w-xs text-center md:text-left leading-loose">
+                    Creating a modern sanctuary where everyone is welcome to find peace and purpose.
+                </p>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-8">
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors active:underline" href="#">Facebook</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors active:underline" href="#">Instagram</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors active:underline" href="#">YouTube</a>
+</div>
+<div class="text-[#faf9f7]/40 text-xs">
+                    © 2024 Royal Priest Church. All rights reserved.
+                </div>
+</div>
+</div>
+</footer>
+</body></html>

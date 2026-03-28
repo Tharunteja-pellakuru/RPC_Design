@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Q&amp;A - Royal Priest Church</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-container-high": "#e9e8e6",
+              "on-error": "#ffffff",
+              "tertiary-fixed": "#d1e4fb",
+              "secondary-fixed-dim": "#e3c191",
+              "primary-fixed-dim": "#b3c5ff",
+              "on-secondary-container": "#785e36",
+              "surface-container-highest": "#e3e2e0",
+              "on-tertiary-fixed-variant": "#36485b",
+              "secondary": "#735a32",
+              "background": "#faf9f7",
+              "surface-variant": "#e3e2e0",
+              "surface-container-lowest": "#ffffff",
+              "on-surface-variant": "#444650",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#758dd5",
+              "on-primary-fixed": "#00174a",
+              "surface-bright": "#faf9f7",
+              "outline": "#757682",
+              "primary-fixed": "#dbe1ff",
+              "on-tertiary-container": "#7f91a6",
+              "on-error-container": "#93000a",
+              "tertiary": "#021526",
+              "surface": "#faf9f7",
+              "tertiary-container": "#182a3b",
+              "surface-tint": "#435b9f",
+              "on-secondary-fixed-variant": "#5a431d",
+              "outline-variant": "#c5c6d2",
+              "primary": "#00113a",
+              "on-background": "#1a1c1b",
+              "primary-container": "#002366",
+              "error": "#ba1a1a",
+              "tertiary-fixed-dim": "#b5c8df",
+              "on-secondary": "#ffffff",
+              "surface-container": "#efeeec",
+              "inverse-on-surface": "#f1f1ef",
+              "inverse-primary": "#b3c5ff",
+              "surface-dim": "#dadad8",
+              "error-container": "#ffdad6",
+              "secondary-container": "#fedaa8",
+              "secondary-fixed": "#ffdeae",
+              "on-tertiary-fixed": "#091d2e",
+              "inverse-surface": "#2f3130",
+              "on-surface": "#1a1c1b",
+              "on-primary-fixed-variant": "#2a4386",
+              "surface-container-low": "#f4f3f1",
+              "on-secondary-fixed": "#281900",
+              "on-tertiary": "#ffffff"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] .expand-icon {
+            transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#faf9f7]/80 dark:bg-[#021526]/80 backdrop-blur-md shadow-sm shadow-[#00113a]/5 dark:shadow-none">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-semibold font-['Newsreader'] text-[#00113a] dark:text-[#faf9f7]">
+                Royal Priest Church
+            </div>
+<div class="hidden md:flex items-center space-x-8 font-['Newsreader'] italic tracking-tight">
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-all duration-300" href="index.html">Home</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-all duration-300" href="about.html">About Us</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-all duration-300" href="testimonials.html">Testimonials</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-all duration-300" href="events.html">Events</a>
+<a class="text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-all duration-300" href="gallery.html">Gallery</a>
+<a class="text-[#735a32] border-b-2 border-[#735a32] pb-1 font-medium" href="q&a.html">Q&amp;A</a>
+</div>
+<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-md font-medium hover:opacity-90 active:scale-95 transition-all">
+                Contact Us
+            </button></a>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="relative py-24 px-6 overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 opacity-10">
+<div class="absolute top-0 right-0 w-96 h-96 bg-secondary rounded-full blur-[120px] -mr-48 -mt-48"></div>
+<div class="absolute bottom-0 left-0 w-96 h-96 bg-primary rounded-full blur-[120px] -ml-48 -mb-48"></div>
+</div>
+<div class="relative max-w-4xl mx-auto text-center">
+<span class="inline-block text-secondary font-medium tracking-widest uppercase text-xs mb-4">Seeking Clarity</span>
+<h1 class="text-5xl md:text-7xl font-headline italic text-primary leading-tight mb-6">Frequently Asked Questions</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl mx-auto font-light leading-relaxed">
+                    Find answers to common questions about our church, our community, and how you can join us in worship and service.
+                </p>
+</div>
+</section>
+<!-- Q&A Section -->
+<section class="py-24 px-6">
+<div class="max-w-3xl mx-auto">
+<!-- FAQ Accordion Grid -->
+<div class="space-y-6">
+<!-- Accordion Item 1 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none focus:outline-none">
+<h3 class="text-xl font-headline font-semibold text-primary pr-8">What should I expect during a Sunday service?</h3>
+<span class="expand-icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="add">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant leading-relaxed font-body">
+                            Our services typically last about 75 minutes. They include contemporary worship music, a time of prayer, and a practical, Bible-based message designed to help you grow in your faith and navigate daily life. We aim for a reverent yet warm atmosphere where everyone feels welcome.
+                        </div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none focus:outline-none">
+<h3 class="text-xl font-headline font-semibold text-primary pr-8">Is there a specific dress code for your church?</h3>
+<span class="expand-icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="add">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant leading-relaxed font-body">
+                            At Royal Priest Church, we believe God looks at the heart rather than outward appearances. You'll find people in everything from business casual to jeans and t-shirts. Please wear what makes you feel comfortable and respectful.
+                        </div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none focus:outline-none">
+<h3 class="text-xl font-headline font-semibold text-primary pr-8">Do you have programs for children and youth?</h3>
+<span class="expand-icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="add">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant leading-relaxed font-body">
+                            Absolutely. We have a vibrant Kids Ministry for ages 0-11 and a Youth Collective for middle and high school students. Our programs are designed to be engaging, safe, and spiritually nurturing, allowing parents to enjoy the main service while their children learn in a tailored environment.
+                        </div>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden" open="">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none focus:outline-none">
+<h3 class="text-xl font-headline font-semibold text-primary pr-8">How can I get involved in a small group?</h3>
+<span class="expand-icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="add">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant leading-relaxed font-body">
+                            Community happens in circles, not just rows. You can join a 'Kingdom Group' by visiting our Connect Table in the lobby after service, or by browsing our digital directory on the website. We have groups for various life stages and interests that meet throughout the week.
+                        </div>
+</details>
+<!-- Accordion Item 5 -->
+<details class="group bg-surface-container-lowest rounded-xl shadow-sm border border-outline-variant/10 overflow-hidden">
+<summary class="flex justify-between items-center p-8 cursor-pointer list-none focus:outline-none">
+<h3 class="text-xl font-headline font-semibold text-primary pr-8">How does the church support the local community?</h3>
+<span class="expand-icon material-symbols-outlined text-secondary transition-transform duration-300" data-icon="add">add</span>
+</summary>
+<div class="px-8 pb-8 text-on-surface-variant leading-relaxed font-body">
+                            We are committed to being "The Modern Sanctuary" for our city. Through our outreach programs, we partner with local food banks, provide tutoring services, and host monthly community events. A portion of every gift to the church is directly reinvested into local mission initiatives.
+                        </div>
+</details>
+</div>
+<!-- Call to Action Card -->
+<div class="mt-20 p-12 bg-primary rounded-xl text-center relative overflow-hidden">
+<div class="absolute inset-0 opacity-20 pointer-events-none">
+<img alt="Interior of a modern sanctuary" class="w-full h-full object-cover" data-alt="Interior of a modern minimalist church sanctuary with wooden accents and warm soft ambient lighting through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1x9nxRT43Q0W2oFLCzgqmUfsLY5rEcCwAscujPV4K9ip-pEgG5Ewb1SF33tx4sHz-Wsy-rFxzb1wx5m4nIy-ZLfaz-xWmmubdrYvdE3yZu39VT4AQpbpj1UCkjBXB7PdgYifRZR5AFj9U0DkHe3evB-qy_EH4SqH-WOJAiGAPnKDcUCAbv9kz-TDRRwj9ZZTR9neA4rQw7496wyOZr5uCELieudZ_bFCCurNlGoWXIdwcqtpkhzMqr7kK3_aVn8qlHkWnK4aZnhI"/>
+</div>
+<div class="relative z-10">
+<h2 class="text-3xl font-headline italic text-on-primary mb-4">Still have questions?</h2>
+<p class="text-on-primary/80 mb-8 max-w-md mx-auto">We'd love to hear from you. Our team is here to help you find your place in our community.</p>
+<a class="inline-flex items-center space-x-2 bg-secondary text-on-primary px-8 py-3 rounded-md hover:opacity-95 transition-all font-medium" href="#">
+<span>Get in Touch</span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Block (Signature Component) -->
+<section class="py-24 bg-surface-container">
+<div class="max-w-4xl mx-auto px-6">
+<div class="flex items-center">
+<div class="w-1 bg-secondary h-32 mr-12 hidden md:block"></div>
+<div>
+<blockquote class="text-4xl font-headline italic text-primary leading-tight mb-6">
+                            "The sanctuary is not a place of escape, but a place of preparation to return to the world with peace and purpose."
+                        </blockquote>
+<cite class="font-body text-secondary uppercase tracking-widest text-sm font-bold">— Pastoral Leadership Team</cite>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#021526] dark:bg-[#000814] w-full py-12">
+<div class="flex flex-col items-center justify-center space-y-6 w-full px-4">
+<div class="flex space-x-8">
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors duration-200 focus:ring-1 focus:ring-[#735a32]" href="#">
+<span class="material-symbols-outlined" data-icon="facebook">social_leaderboard</span>
+</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors duration-200 focus:ring-1 focus:ring-[#735a32]" href="#">
+<span class="material-symbols-outlined" data-icon="instagram">retweet</span>
+</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors duration-200 focus:ring-1 focus:ring-[#735a32]" href="#">
+<span class="material-symbols-outlined" data-icon="youtube">video_youtube</span>
+</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors duration-200 focus:ring-1 focus:ring-[#735a32]" href="#">
+<span class="material-symbols-outlined" data-icon="mail">mail</span>
+</a>
+</div>
+<p class="text-[#faf9f7] font-['Manrope'] text-sm tracking-wide uppercase">
+                © 2024 Royal Priest Church. All rights reserved.
+            </p>
+</div>
+</footer>
+</body></html>
