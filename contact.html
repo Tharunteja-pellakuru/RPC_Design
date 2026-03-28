@@ -82,28 +82,57 @@
         }
     </style>
 </head>
-<body class="bg-background font-body text-on-surface antialiased overflow-hidden">
-<!-- Background Content (Simulated for Modal Context) -->
-<main class="min-h-screen relative flex items-center justify-center p-8">
+<body class="bg-surface font-body text-on-surface antialiased">
+<!-- Top Navigation -->
+<nav id="main-nav" class="fixed top-0 w-full z-[100] transition-all duration-500">
+<div class="flex justify-between items-center px-6 md:px-12 lg:px-24 py-6 max-w-screen-2xl mx-auto">
+<a class="nav-logo relative z-[110] text-xl md:text-2xl font-bold font-['Manrope'] text-[#00113a] dark:text-[#faf9f7] transition-colors uppercase tracking-widest" href="index.html">Royal Priest Church</a>
+<!-- Mobile Menu Button -->
+<button id="mobile-menu-btn" class="nav-link relative z-[110] md:hidden text-[#00113a] dark:text-[#faf9f7] hover:text-[#735a32] transition-colors p-1">
+    <span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+<div class="hidden md:flex items-center gap-8">
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="index.html">Home</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="about.html">About Us</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="testimonials.html">Testimonials</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="events.html">Events</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="gallery.html">Gallery</a>
+<a class="nav-link font-medium font-['Manrope'] text-[#00113a]/70 dark:text-[#faf9f7]/70 hover:text-[#735a32] transition-colors duration-300" href="q&a.html">Q&amp;A</a>
+</div>
+<a href="contact.html" class="hidden md:block relative z-[110]"><button class="nav-btn bg-primary text-on-primary px-6 py-2 rounded-md font-label uppercase tracking-widest text-xs scale-95 hover:opacity-90 transition-all active:scale-95 border-b-2 border-primary">
+                Contact Us
+            </button></a>
+</div>
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu" class="fixed top-0 left-0 w-full h-[100vh] bg-[#faf9f7] dark:bg-[#021526] z-[105] hidden flex-col items-center justify-center gap-8 opacity-0 transition-opacity duration-300">
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="index.html">Home</a>
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="about.html">About Us</a>
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="testimonials.html">Testimonials</a>
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="events.html">Events</a>
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="gallery.html">Gallery</a>
+    <a class="text-[#00113a] dark:text-[#faf9f7] font-medium font-['Manrope'] hover:text-[#735a32] transition-colors duration-300 text-2xl tracking-widest uppercase" href="q&a.html">Q&amp;A</a>
+</div>
+</nav>
+
+<main>
+<!-- Hero Section -->
+<section class="relative h-[60vh] flex items-center justify-center overflow-hidden">
 <div class="absolute inset-0 z-0">
 <img class="w-full h-full object-cover opacity-60 grayscale-[20%]" data-alt="Interior of a modern minimal church sanctuary with high ceilings, warm wooden accents, and soft natural sunlight streaming through high windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARdHdf2cd73Bc7y7LnKyIPM93qgRuP6XIQ1KBGSPg-UiW2yBtqTvmETQHcHxXnmiLb-M6ziQfpEhYuYYte_Disx_s0Ucxe4tRP2QXgITPRcWQVUjbp-9uyArCq9gT-j0yRRN_OP_G9W8QoWzkcs7EnbaW9W6PxNoOcHWWQ-A6LK-_SPrvWmV68tu0-pdp9u1foSXKJ4c2uYg7REDEGTm3BdGGmTW-a0mbpVhEubotEMav7YD3wWHL4PDn9QECNuRXki6cWWb9jb0o"/>
-<div class="absolute inset-0 bg-primary/10 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="absolute inset-x-0 top-0 h-40 bg-gradient-to-b from-black/50 to-transparent pointer-events-none z-10"></div>
 </div>
-<div class="z-10 text-center max-w-2xl">
-<h2 class="font-headline text-5xl md:text-7xl text-primary mb-6 tracking-tight">Our sanctuary is open.</h2>
-<p class="font-body text-lg text-on-surface-variant uppercase tracking-widest">Experience the modern sacred.</p>
+<div class="relative z-10 text-center max-w-2xl px-6">
+<h1 class="font-headline text-display-lg text-4xl sm:text-5xl lg:text-6xl text-on-primary tracking-tight mb-4 md:mb-6">Our sanctuary is open.</h1>
+<p class="font-body text-lg md:text-xl lg:text-2xl text-on-primary/90 leading-relaxed uppercase tracking-widest">Experience the modern sacred.</p>
 </div>
-</main>
-<!-- Modal Backdrop Overlay -->
-<div class="fixed inset-0 z-50 flex items-center justify-center bg-tertiary/40 backdrop-blur-md p-4 md:p-8">
-<!-- Modal Container -->
-<div class="relative w-full max-w-xl bg-surface-container-lowest rounded-xl shadow-[0_40px_100px_-20px_rgba(0,17,58,0.15)] overflow-hidden">
-<!-- Close Icon -->
-<button class="absolute top-6 right-6 text-on-surface-variant hover:text-primary transition-colors focus:outline-none focus:ring-2 focus:ring-secondary/50 rounded-full p-1">
-<span class="material-symbols-outlined text-2xl">close</span>
-</button>
-<!-- Modal Content Wrapper -->
-<div class="p-8 md:p-12">
+</section>
+
+<!-- Contact Form Section -->
+<section class="relative z-20 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto -mt-16 md:-mt-24 pb-16 md:pb-24">
+    <div class="max-w-xl mx-auto bg-surface-container-lowest rounded-xl shadow-[0_40px_100px_-20px_rgba(0,17,58,0.15)] overflow-hidden">
+        <div class="p-8 md:p-12">
 <!-- Header -->
 <header class="mb-10 text-center md:text-left">
 <h1 class="font-headline text-4xl text-primary mb-2 tracking-tight">Contact Us</h1>
@@ -143,15 +172,125 @@
 </div>
 </form>
 </div>
-<!-- Subtle Tonal Branding Footer -->
-<div class="bg-surface-container-low px-8 py-4 flex justify-between items-center">
-<span class="font-headline italic text-primary/40 text-sm">Royal Priest Church</span>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-outline/40 text-lg">mail</span>
-<span class="material-symbols-outlined text-outline/40 text-lg">call</span>
+        </div>
+        <!-- Subtle Tonal Branding Footer -->
+        <div class="bg-surface-container-low px-8 py-4 flex justify-between items-center">
+        <span class="font-['Manrope'] font-bold uppercase tracking-widest text-primary/40 text-sm">Royal Priest Church</span>
+        <div class="flex gap-4">
+        <span class="material-symbols-outlined text-outline/40 text-lg">mail</span>
+        <span class="material-symbols-outlined text-outline/40 text-lg">call</span>
+        </div>
+        </div>
+    </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-[#021526] dark:bg-[#00113a] w-full py-12 px-6 md:px-12 lg:px-24">
+<div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 pb-12 border-b border-on-tertiary/10">
+<div class="max-w-sm">
+<a class="font-['Manrope'] text-lg text-[#735a32] font-bold uppercase tracking-widest mb-6 block" href="#">Royal Priest Church</a>
+<p class="font-['Manrope'] text-sm tracking-wide text-[#faf9f7]/60 leading-relaxed mb-6">
+                    A Vibrant community of believers dedicated to living out the gospel through radical love, authentic, fellowship, and servant leadership
+                </p>
+<div class="flex gap-6">
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors" href="#">
+<span class="material-symbols-outlined">social_leaderboard</span>
+</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors" href="#">
+<span class="material-symbols-outlined">camera</span>
+</a>
+<a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors" href="#">
+<span class="material-symbols-outlined">play_circle</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-12">
+<div>
+<h5 class="text-[#faf9f7] font-bold font-label mb-6 text-sm uppercase tracking-widest">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="#">Join a Group</a></li>
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="#">Volunteer</a></li>
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="#">Ministries</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-[#faf9f7] font-bold font-label mb-6 text-sm uppercase tracking-widest">Gather</h5>
+<ul class="space-y-4">
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="index.html">Home</a></li>
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="about.html">About Us</a></li>
+<li><a class="text-[#faf9f7]/60 hover:text-[#735a32] transition-colors font-label text-sm" href="events.html">Events</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h5 class="text-[#faf9f7] font-bold font-label mb-6 text-sm uppercase tracking-widest">Contact</h5>
+<p class="text-[#faf9f7]/60 font-label text-sm mb-2">King's Castle,<br/>Sai Nagar, Vidyangar, 524413.</p>
+<p class="text-[#faf9f7]/60 font-label text-sm">royalpriestchurch@gmail.com<br/>+91 9XXXX XXXX9.</p>
 </div>
 </div>
 </div>
+<div class="flex flex-col md:flex-row justify-between items-center w-full gap-6 pt-12">
+<p class="font-['Manrope'] text-sm tracking-wide text-[#faf9f7]/60">© 2026 Royal Priest Church. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-sm tracking-wide text-[#faf9f7]/60 hover:text-[#735a32]" href="#">Privacy Policy</a>
+<a class="font-['Manrope'] text-sm tracking-wide text-[#faf9f7]/60 hover:text-[#735a32]" href="#">Terms of Service</a>
 </div>
-<!-- Hidden Header/Footer from JSON (Not rendered as per task requirements for Modal focusing, but keeping architecture in mind) -->
+</div>
+</footer>
+
+<script>
+  const nav = document.getElementById('main-nav');
+  const heroSection = document.querySelector('section.relative');
+  const heroHeight = heroSection ? heroSection.offsetHeight : 500;
+
+  function updateNav() {
+    if (nav) {
+        if (window.scrollY > heroHeight * 0.1) {
+          nav.classList.add('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+          nav.classList.remove('bg-transparent', 'nav-transparent');
+        } else {
+          nav.classList.remove('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+          nav.classList.add('bg-transparent', 'nav-transparent');
+        }
+    }
+  }
+
+  // Set initial state
+  if (nav) {
+      nav.classList.add('bg-transparent', 'nav-transparent');
+      updateNav();
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+
+  // Mobile Menu Logic
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = mobileMenuBtn ? mobileMenuBtn.querySelector('span') : null;
+
+  if (mobileMenuBtn && mobileMenu && menuIcon) {
+      mobileMenuBtn.addEventListener('click', () => {
+          const isOpen = !mobileMenu.classList.contains('hidden');
+          if (isOpen) {
+              mobileMenu.classList.add('opacity-0');
+              setTimeout(() => { 
+                  mobileMenu.classList.add('hidden');
+                  mobileMenu.classList.remove('flex');
+              }, 300);
+              menuIcon.textContent = 'menu';
+              document.body.style.overflow = '';
+              if (typeof updateNav === 'function') updateNav(); // Re-trigger scroll calculation
+          } else {
+              mobileMenu.classList.remove('hidden');
+              mobileMenu.classList.add('flex');
+              setTimeout(() => { mobileMenu.classList.remove('opacity-0'); }, 10);
+              menuIcon.textContent = 'close';
+              document.body.style.overflow = 'hidden';
+              if (typeof nav !== 'undefined' && nav) {
+                  nav.classList.add('bg-[#faf9f7]', 'dark:bg-[#021526]', 'shadow-sm', 'shadow-[#00113a]/5', 'backdrop-blur-md');
+                  nav.classList.remove('bg-transparent', 'nav-transparent');
+              }
+          }
+      });
+  }
+</script>
 </body></html>
