@@ -114,8 +114,8 @@
 <a class="nav-logo relative z-[110] transition-colors" href="index.html">
     <img src="Logo.png" alt="Royal Priest Church Logo" class="h-16 md:h-20 w-auto object-contain logo-img">
 </a>
-<!-- Mobile Menu Button -->
-<button id="mobile-menu-btn" class="nav-link relative z-[110] md:hidden text-[#00113a] dark:text-[#faf9f7] hover:text-[#735a32] transition-colors p-1">
+<!-- Mobile Menu Button - Hidden to use Bottom Navigation instead -->
+<button id="mobile-menu-btn" class="nav-link relative z-[110] hidden text-[#00113a] dark:text-[#faf9f7] hover:text-[#735a32] transition-colors p-1">
     <span class="material-symbols-outlined text-3xl">menu</span>
 </button>
 <div class="hidden md:flex items-center gap-8">
@@ -130,19 +130,36 @@
                 Contact Us
             </button></a>
 </div>
-<!-- Mobile Menu Overlay -->
-<div id="mobile-menu" class="fixed inset-0 w-full h-[100dvh] bg-[#faf9f7]/95 dark:bg-[#021526]/95 backdrop-blur-2xl z-[105] hidden flex-col items-center justify-center opacity-0 transition-opacity duration-300">
-    <div class="flex flex-col items-center justify-center w-full h-full gap-6 md:gap-8 overflow-y-auto py-24 px-6 relative">
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="index.html">Home</a>
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="about.html">About Us</a>
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="testimonials.html">Testimonials</a>
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="events.html">Events</a>
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="gallery.html">Gallery</a>
-        <a class="nav-mobile-link opacity-0 translate-y-8 text-[#00113a] dark:text-[#faf9f7] font-headline text-4xl sm:text-5xl md:text-6xl tracking-tight transition-all duration-500 hover:-translate-y-1 hover:text-secondary" href="q&a.html">Q&amp;A</a>
-        <a href="contact.html" class="nav-mobile-link opacity-0 translate-y-8 mt-6 md:mt-10 transition-all duration-500">
-            <button class="bg-primary text-on-primary px-10 py-4 rounded-full font-label uppercase tracking-widest text-xs md:text-sm hover:bg-primary-container hover:text-white transition-all transform hover:scale-105 shadow-xl">Contact Us</button>
-        </a>
-    </div>
+<!-- Mobile Bottom Navigation Bar -->
+<div id="mobile-bottom-nav" class="fixed bottom-0 left-0 right-0 h-18 bg-[#faf9f7]/85 dark:bg-[#021526]/85 backdrop-blur-xl border-t border-outline-variant/10 z-[200] grid grid-cols-7 items-center px-1 md:hidden safe-area-inset-bottom">
+    <a href="index.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">home</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Home</span>
+    </a>
+    <a href="about.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">info</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">About</span>
+    </a>
+    <a href="testimonials.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">reviews</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Reviews</span>
+    </a>
+    <a href="events.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">event_note</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Events</span>
+    </a>
+    <a href="gallery.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">photo_library</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Gallery</span>
+    </a>
+    <a href="q&a.html" class="flex flex-col items-center justify-center gap-1 text-[#00113a]/60 dark:text-[#faf9f7]/60">
+        <span class="material-symbols-outlined text-2xl">help_outline</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Q&A</span>
+    </a>
+    <a href="contact.html" class="flex flex-col items-center justify-center gap-1 text-[#735a32]">
+        <span class="material-symbols-outlined text-2xl">mail</span>
+        <span class="text-[10px] font-bold uppercase tracking-tighter">Contact</span>
+    </a>
 </div>
 </nav>
 
@@ -218,7 +235,7 @@
 </main>
 
 <!-- Footer -->
-<footer class="bg-[#021526] dark:bg-[#00113a] w-full py-12 px-6 md:px-12 lg:px-24">
+<footer class="bg-[#021526] text-[#faf9f7] pt-24 pb-32 px-6 md:px-12 lg:px-24">
 <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-start gap-12 pb-12 border-b border-on-tertiary/10">
 <div class="max-w-sm">
 <a class="mb-6 block" href="index.html">
